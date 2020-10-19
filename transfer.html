@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="tranfer.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+ .bg-image {
+  /* The image used */
+  background-image: url("blueplain.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+.btns {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+    
+    <button class="btns"><a href = "index.php" class="fa fa-home">Home</a></button>
+
+    <div class="bg-image"></div>
+
+    <div>
+  <form action="tranfers.php" class="container" method ="post">
+    <h1>Transfer Money</h1>
+
+    <label for="sendername">Sender Name</label>
+    <input type="text"  name="sendername" placeholder="Your name.."><br><br>
+
+    <label for="senderAc">Account No.</label>
+    &nbsp;<input type="number"  name="senderAc" placeholder="Your account number.."><br><br>
+
+    <label for="recievername">Reciever Name</label>
+    <input type ="text" name="recievername" placeholder="Your name"><br><br>
+    
+    <label for="recieverAc">Account no.</label>
+    <input type="number"  name="recieverAc" placeholder="Your account number.."><br><br>
+
+    <label for="amount">Amount</label>
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number"  name="amount" placeholder="Amount.."><br><br>
+
+    <input type="submit" value="Submit" class="btn">
+  </form>
+</div>
+</body>
+</html>
+
+
